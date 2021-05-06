@@ -3,7 +3,20 @@
 ## Beschrijving
 Om te oefenen met authenticatie kun je deze nepserver gebruiken. De nepserver draait apart van jouw frontend project, zodat we de "database" via een API kunnen benaderen. Zo kun je door gebruik te maken van specifieke eindpoints, data opvragen en toevoegen!
 
-## Eindpoints
+## Gebruik
+Voor je de server kunt gebruiken zul je de de dependencies moeten installeren met het commando:
+
+`npm install`
+
+Er is een speciaal script aangemaakt om deze server te runnen. Het letterlijke script - mocht je nieuwsgierig zijn - kun je terugvinden in de `package.json`. Om de server te starten hoef je slechts het volgende commando in jouw terminal in te voeren:
+
+`npm run json:server`
+
+Deze server draait op [http://localhost:3000](http://localhost:3000), wanneer je dit in de browser opent zul je alle beschikbare endpoints zien verschijnen. 
+
+_Let op_: omdat deze server op `localhost:3000` draait is het belangrijk deze server te starten voor je een React-project start. React zal dan automatisch vragen om dat project op een andere port te draaien.
+
+## Endpoints
 
 Wanneer deze server draait is hij benaderbaar op [http://localhost:3000](http://localhost:3000). Dis is de **basis url**, welke aan te vullen is middels de onderstaande endpoints.
 
@@ -59,16 +72,3 @@ Alleen ingelogde gebruikers kunnen deze algemene afgeschermde content opvragen. 
   Authorization: "Bearer xxx.xxx.xxx",
 }
 ```
-
-## Gebruik
-Voor je de server kunt gebruiken zul je de de dependencies moeten installeren met het commando:
-
-`npm install`
-
-Er is een speciaal script aangemaakt om deze server te runnen. Het letterlijke script - mocht je nieuwsgierig zijn - kun je terugvinden in de `package.json`. Om de server te starten hoef je slechts het volgende commando in jouw terminal in te voeren:
-
-`npm run json:server`
-
-Deze server draait op [http://localhost:3000](http://localhost:3000), wanneer je dit in de browser opent zul je alle beschikbare endpoints zien verschijnen. 
-
-_Let op_: omdat deze server op `localhost:3000` draait is het belangrijk deze server te starten voor je een React-project start. React zal dan automatisch vragen om dat project op een andere port te draaien.
